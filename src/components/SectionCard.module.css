@@ -1,0 +1,38 @@
+.sectionCard {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--highlight-color);
+  min-height: 230px;
+}
+
+p.cardTitle {
+  font-size: 28px;
+}
+
+p.cardDetails {
+  font-size: 12px;
+  padding-bottom: 1.2vw;
+}
+
+button {
+  padding: 2px 15px;
+  background-color: white;
+  border: 1px solid white;
+  color: #000;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
