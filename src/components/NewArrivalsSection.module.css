@@ -15,9 +15,11 @@
 
 .newArrivalsList {
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
   list-style: none;
   padding: 16px;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .viewAllLink {
@@ -30,4 +32,24 @@
   color: white;
   margin: 60px auto;
   border-radius: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .viewAllLink {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (max-width: 750px) {
+  .newArrivalsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .newArrivalsList li {
+    justify-self: center;
+  }
 }

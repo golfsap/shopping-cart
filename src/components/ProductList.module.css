@@ -1,9 +1,13 @@
 .productList {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
-  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 1.5rem;
   list-style: none;
   margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+  .productList {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

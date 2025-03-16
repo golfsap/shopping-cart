@@ -8,6 +8,7 @@
   background-color: var(--highlight-color);
   min-height: 230px;
   padding: 5px;
+  color: black;
 }
 
 p.cardTitle {
