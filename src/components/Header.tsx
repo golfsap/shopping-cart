@@ -1,11 +1,12 @@
 import styles from "./Header.module.css";
+import ShopButton from "./ShopButton";
 
 function Header() {
   return (
     <header className={styles.header}>
       <p className={styles.headerTitle}>Essentials</p>
-      <p>Join the cult.</p>
-      <button>Shop</button>
+      <p className={styles.subtitle}>Join the cult.</p>
+      <ShopButton />
     </header>
   );
 }

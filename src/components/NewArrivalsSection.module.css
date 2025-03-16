@@ -1,0 +1,33 @@
+.newArrivalsSection {
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    font-size: 60px;
+    font-weight: 900;
+    /* margin-top: 6rem; */
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+.newArrivalsList {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 16px;
+}
+
+.viewAllLink {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background-color: black;
+  color: white;
+  margin: 60px auto;
+  border-radius: 0.25rem;
+}

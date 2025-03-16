@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, system-ui, Avenir, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,6 +18,9 @@
   --medium-grey: #4f4557;
   --light-grey: #6d5d6e;
   --highlight-color: #f4eee0;
+
+  --font-primary: "Helvetica Neue", Helvetica;
+  --font-secondary: "Roboto Mono", monospace;
 }
 
 *,

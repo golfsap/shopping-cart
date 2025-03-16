@@ -6,10 +6,9 @@ const StyledNavbar = styled.nav`
   // border: 1px solid;
   color: var(--highlight-color);
   background-color: var(--medium-grey);
-  padding-top: 33px;
-  padding-bottom: 44px;
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+  padding: 28px 20px;
+  // padding-left: 2.75rem;
+  // padding-right: 2.75rem;
 `;
 
 const NavLinks = styled.div`

@@ -1,4 +1,5 @@
 import styles from "./SectionCard.module.css";
+import ShopButton from "./ShopButton";
 
 interface CardDetailsProps {
   card: {
@@ -12,7 +13,7 @@ function SectionCard({ card }: CardDetailsProps) {
     <div className={styles.sectionCard}>
       <p className={styles.cardTitle}>{card.title}</p>
       <p className={styles.cardDetails}>{card.detail}</p>
-      <button>Shop</button>
+      <ShopButton />
     </div>
   );
 }

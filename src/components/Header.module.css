@@ -1,6 +1,5 @@
 .header {
   height: 50vh;
-  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,30 +8,14 @@
   color: #fff;
 }
 
-.header .headerTitle {
+.headerTitle {
   font-size: 60px;
   margin-bottom: 4px;
+  font-family: var(--font-primary);
+  font-weight: 900;
 }
 
-.header p {
+.subtitle {
   margin-bottom: 10px;
-}
-
-.header button {
-  padding: 2px 15px;
-  background-color: white;
-  border: 1px solid white;
-  color: #000;
-  border-radius: 100px;
-  font-weight: 700;
-  font-size: 9px;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-}
-
-.header button:hover {
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
+  font-family: var(--font-secondary);
 }
