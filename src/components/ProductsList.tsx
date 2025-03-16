@@ -8,7 +8,9 @@ function ProductList() {
   return (
     <ul className={styles.productList}>
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <li key={product.id}>
+          <ProductCard product={product} />
+        </li>
       ))}
     </ul>
   );

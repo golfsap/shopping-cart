@@ -9,6 +9,11 @@ const StyledNavbar = styled.nav`
   padding: 28px 20px;
   // padding-left: 2.75rem;
   // padding-right: 2.75rem;
+
+  & h2 {
+    font-size: 16px;
+    font-weight: 900;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -20,6 +25,10 @@ const NavLinks = styled.div`
   a {
     color: var(--highlight-color);
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    font-weight: 500;
   }
 
   a:hover {
@@ -31,7 +40,7 @@ function Navbar() {
   return (
     <StyledNavbar>
       <div className="navTitle">
-        <h2>Shopping cart</h2>
+        <h2>Brand Logo</h2>
       </div>
       <NavLinks>
         <a href="/">Home</a>

@@ -15,6 +15,7 @@ function ProductCard({ product }: ProductCardProps) {
         <h3>{product.title}</h3>
         <p>{product.price} thb</p>
       </div>
+      <button>Add To Cart</button>
     </div>
   );
 }
