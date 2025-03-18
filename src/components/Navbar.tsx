@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ShoppingBag } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const StyledNavbar = styled.nav`
   display: flex;
@@ -43,9 +45,11 @@ function Navbar() {
         <h2>Brand Logo</h2>
       </div>
       <NavLinks>
-        <a href="/">Home</a>
-        <a href="/shop">Shop</a>
-        {/* <a href="#">Cart</a> */}
+        <Link to="/">Home </Link>
+        <Link to="/shop">Shop</Link>
+        <Link to="/cart">
+          <ShoppingBag />
+        </Link>
       </NavLinks>
     </StyledNavbar>
   );

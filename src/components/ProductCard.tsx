@@ -1,4 +1,5 @@
 import { Product } from "../context/ProductsDataProvider";
+import { useCart } from "../context/CartContext";
 import styles from "./ProductCard.module.css";
 
 interface ProductCardProps {
@@ -6,6 +7,8 @@ interface ProductCardProps {
 }
 
 function ProductCard({ product }: ProductCardProps) {
+  const { addToCart } = useCart();
+
   return (
     <div className={styles.productCard}>
       <div className={styles.cardImage}>
@@ -15,7 +18,7 @@ function ProductCard({ product }: ProductCardProps) {
         <h3>{product.title}</h3>
         <p>{product.price} thb</p>
       </div>
-      <button>Add To Cart</button>
+      <button onClick={() => addToCart(product.id)}>Add To Cart</button>
     </div>
   );
 }
