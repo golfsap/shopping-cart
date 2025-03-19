@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 export interface CartItem {
   id: number;
@@ -17,9 +17,9 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
 
-  useEffect(() => {
-    console.log("Cart updated: ", cart);
-  }, [cart]);
+  // useEffect(() => {
+  //   console.log("Cart updated: ", cart);
+  // }, [cart]);
 
   const addToCart = (productId: number) => {
     setCart((prevCart) => {
