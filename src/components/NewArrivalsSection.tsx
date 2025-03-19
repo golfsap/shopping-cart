@@ -1,43 +1,11 @@
 import { Link } from "react-router-dom";
-import redPandaImage from "../assets/red_panda.jpeg";
 import ProductCard from "./ProductCard";
 import styles from "./NewArrivalsSection.module.css";
+import { useProducts } from "../context/ProductsDataProvider";
 
 function NewArrivalsSection() {
-  const sampleProducts = [
-    {
-      id: 0,
-      title: "Trail Shorts",
-      price: 9000,
-      image: redPandaImage,
-      description:
-        "A lightweight breathable short made in sweat-wicking materials and keys pockets",
-    },
-    {
-      id: 1,
-      title: "Race Tank",
-      price: 11000,
-      image: redPandaImage,
-      description:
-        "A lightweight breathable short made in sweat-wicking materials and keys pockets",
-    },
-    {
-      id: 2,
-      title: "Running Socks",
-      price: 700,
-      image: redPandaImage,
-      description:
-        "A lightweight breathable short made in sweat-wicking materials and keys pockets",
-    },
-    {
-      id: 3,
-      title: "Reflex Cap",
-      price: 1200,
-      image: redPandaImage,
-      description:
-        "A lightweight breathable short made in sweat-wicking materials and keys pockets",
-    },
-  ];
+  const products = useProducts();
+  const sampleProducts = products.slice(1, 5);
 
   return (
     <section className={styles.newArrivalsSection}>

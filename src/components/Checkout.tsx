@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { useMemo } from "react";
+import { useCart } from "../context/CartContext";
+import { useProducts } from "../context/ProductsDataProvider";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -53,16 +56,42 @@ const StyledDiv = styled.div`
     font-size: 14px;
   }
 
+  button {
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-radius: 0.375rem;
+    font-weight: 900;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  button: hover {
+    cursor: pointer;
+  }
+
   @media (prefers-color-scheme: dark) {
     background-color: transparent;
   }
 `;
 
 function Checkout() {
+  const { cart } = useCart();
+  const products = useProducts();
+
+  const subtotal = useMemo(() => {
+    const total = cart.reduce((sum, item) => {
+      const product = products.find((p) => p.id === item.id);
+      return product ? sum + product.price * item.quantity : sum;
+    }, 0);
+    return Math.round(total * 100) / 100;
+  }, [cart, products]);
+
   return (
     <StyledDiv>
       <div className="checkoutSummary">
-        <p className="subheader">Free delivery unlocked</p>
+        <p className="subheader">Free standard delivery unlocked</p>
         <p className="top">
           All prices include taxes and customs duties. Free Returns.
         </p>
@@ -72,8 +101,11 @@ function Checkout() {
         </div>
         <div className="subtotal">
           <p className="subtotalLabel">Subtotal</p>
-          <p>52,000 THB</p>
+          <p>{subtotal} USD</p>
         </div>
+        <button onClick={() => alert("This is just a fake site!")}>
+          Checkout
+        </button>
       </div>
     </StyledDiv>
   );

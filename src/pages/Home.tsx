@@ -30,7 +30,6 @@ function Home() {
   return (
     <>
       <Header />
-
       <StyledSection>
         {cardData.map((card) => (
           <SectionCard key={card.title} card={card} />

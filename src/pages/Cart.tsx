@@ -8,6 +8,7 @@ import Checkout from "../components/Checkout";
 const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;

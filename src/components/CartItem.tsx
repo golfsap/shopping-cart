@@ -18,11 +18,11 @@ function CartItem({ item, product }: CartItemProps) {
       </div>
       <div className={styles.itemDetails}>
         <p className={styles.itemTitle}>{product.title}</p>
-        <p className={styles.itemPrice}>{product.price} THB</p>
+        <p className={styles.itemPrice}>{product.price} USD</p>
         <div className={styles.quantity}>
           <InputRocker item={item} />
           <div className={styles.itemTotal}>
-            {product.price * item.quantity} THB
+            {Math.round(product.price * item.quantity * 100) / 100} USD
           </div>
         </div>
       </div>

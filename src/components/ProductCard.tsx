@@ -16,7 +16,7 @@ function ProductCard({ product }: ProductCardProps) {
       </div>
       <div className={styles.cardDetails}>
         <h3>{product.title}</h3>
-        <p>{product.price} thb</p>
+        <p>{product.price} usd</p>
       </div>
       <button onClick={() => addToCart(product.id)}>Add To Cart</button>
     </div>

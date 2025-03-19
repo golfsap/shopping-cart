@@ -1,9 +1,6 @@
 .cartItem {
   display: flex;
-  /* align-items: center; */
-  border: 1px solid;
   gap: 36px;
-  /* justify-content: center; */
 }
 
 .itemImage img {
@@ -46,7 +43,6 @@
 .removeBtn {
   padding: 5px 15px;
   border: 1px solid;
-  /* color: red; */
   border-radius: 100px;
   font-weight: 700;
   font-size: 9px;
@@ -64,6 +60,19 @@
 .removeBtn:hover {
   border-color: red;
   color: red;
-  /* background-color: transparent; */
   cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .cartItem {
+    flex-direction: column;
+    gap: 22px;
+    position: relative;
+  }
+
+  .removeBtn {
+    position: absolute;
+    right: 0;
+    padding: 2px 15px;
+  }
 }

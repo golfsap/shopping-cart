@@ -6,7 +6,7 @@ import CartItem from "./CartItem";
 const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
