@@ -6,6 +6,13 @@ import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import Footer from "./components/Footer";
+import styled from "styled-components";
+
+const MainContent = styled.main`
+  flex: 1;
+  padding-top: 85px;
+`;
 
 function App() {
   return (
@@ -13,11 +20,14 @@ function App() {
       <ProductsDataProvider>
         <CartProvider>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
+          <MainContent>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </MainContent>
+          <Footer />
         </CartProvider>
       </ProductsDataProvider>
     </Router>

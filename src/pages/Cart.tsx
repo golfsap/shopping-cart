@@ -35,6 +35,7 @@ const StyledDiv = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 3.5rem;
+  padding-bottom: 3rem;
 
   p {
     font-size: 16px;

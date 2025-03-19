@@ -16,14 +16,14 @@ const StyledSection = styled.section`
 
 function Home() {
   const cardData = [
-    { title: "Tops", detail: "For those who run to feel free" },
+    { title: "Tops", detail: "Lorem ipsum dolor sit amet" },
     {
       title: "Shorts",
-      detail: "The heart of your kit",
+      detail: "consectetur adipiscing elit",
     },
     {
       title: "Headwear",
-      detail: "Lightweight elemental protection",
+      detail: "sed do eiusmod tempor incididunt",
     },
   ];
 

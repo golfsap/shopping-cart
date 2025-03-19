@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <p className={styles.headerTitle}>Essentials</p>
-      <p className={styles.subtitle}>Join the cult.</p>
+      <p className={styles.subtitle}>Join the movement.</p>
       <ShopButton />
     </header>
   );

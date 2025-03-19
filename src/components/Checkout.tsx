@@ -6,7 +6,7 @@ import { useProducts } from "../context/ProductsDataProvider";
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1.25rem 2.75rem;
+  padding: 1.5rem 2.75rem;
   background-color: rgb(248 249 249);
 
   .checkoutSummary {
@@ -72,7 +72,7 @@ const StyledDiv = styled.div`
   }
 
   @media (prefers-color-scheme: dark) {
-    background-color: transparent;
+    background-color: #3d3d3d;
   }
 `;
 
