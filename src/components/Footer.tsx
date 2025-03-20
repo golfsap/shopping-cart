@@ -35,6 +35,10 @@ const StyledFooter = styled.footer`
     padding-top: 2rem;
   }
 
+  .icon:hover {
+    cursor: pointer;
+  }
+
   @media (prefers-color-scheme: dark) {
     background-color: var(--medium-grey);
   }
@@ -53,9 +57,9 @@ function Footer() {
         </p>
       </div>
       <div className="footerLinks">
-        <Instagram />
-        <Hash />
-        <Youtube />
+        <Instagram className="icon" />
+        <Hash className="icon" />
+        <Youtube className="icon" />
       </div>
     </StyledFooter>
   );
